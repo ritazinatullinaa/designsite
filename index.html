@@ -32,13 +32,14 @@
       
       .scroll-container img {
         flex: 0 0 auto;
-        width: 80%;
-        max-width: 400px;
-        height: auto;
+        height: 250px; /* задаём фиксированную высоту */
+        width: auto;   /* ширина подстраивается */
+        object-fit: contain; /* или 'cover', если хочешь обрезать края */
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         scroll-snap-align: center;
       }
+
     .gallery img {
       width: 100%;
       height: auto;
